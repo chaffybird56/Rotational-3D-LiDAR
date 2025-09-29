@@ -39,10 +39,11 @@
 
 <!-- Circuit schematic placeholder -->
 <p align="center">
-  <img width="1209" height="614" alt="SCR-20250929-kowz" src="https://github.com/user-attachments/assets/8a374685-fb1f-450f-8e00-e4d0ea366735" />
+  <img width="1460" height="751" alt="SCR-20250929-kzld" src="https://github.com/user-attachments/assets/32dd998f-aa16-4a4d-9869-aa191e9aa436" />
   <br/>
   <sub><b>Fig 3 — Circuit schematic:</b> MSP432 ↔ VL53L1X (I²C), MSP432 ↔ ULN2003 (GPIO), control buttons.</sub>
 </p>
+
 
 ---
 
