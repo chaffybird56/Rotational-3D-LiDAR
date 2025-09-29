@@ -6,6 +6,7 @@
   <br/>
   <sub><b>Fig 1 — Hallway scan:</b> representative point cloud produced by the module.</sub>
 </p>
+
 > This project builds a **rotating lidar-like scanner** using an **MSP432E401Y microcontroller**, a **VL53L1X time‑of‑flight (ToF) sensor**, and a **28BYJ‑48 stepper motor**.  
 > As the stepper rotates the sensor through 360°, the MCU collects distance samples at each step, streams them over UART, and a host computer reconstructs the readings into a **point cloud**.  
 > In plain terms: the module “sweeps” its surroundings, recording how far away walls and objects are, and then stitches those measurements into a 2D/3D map. The goal is to demonstrate how embedded hardware, sensors, and host visualization come together to form a **low‑cost scanning system**.
