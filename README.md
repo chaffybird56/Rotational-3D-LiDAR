@@ -1,3 +1,1 @@
-#LIDAR Module: 3D Scanning with MSP432, VL53L1X, and Point Cloud Generation
-3D LIDAR module composed of the MSP432E401Y microcontroller, VL53L1X time of flight sensor, and a 28BYJ-48 servo driven by a ULN2003
-The VL53L1X provides accurate dis- tance measurements  through  utilization  of a 940nm class A laser and a SPAD(Single Photon Avalanche Diode) receiver with in- frared filters for the best results in typical environments[3].The user is able to connect to the 2D LIDAR module through UART over USB to run the python program python data.  This python program will generate a point cloud from the data being recorded during each measurement. The end user can utilize their own surface construction algo- rithms using the point cloud data or use the the python program render.py to generate a clean ’ply’ file.
+#
