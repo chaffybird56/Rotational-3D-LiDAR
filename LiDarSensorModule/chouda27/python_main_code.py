@@ -14,8 +14,6 @@
 #       your system doesn't support OpenGL (very rare), then you can install an OpenGL emulator dll
 #           https://fdossena.com/?p=mesa/index.frag (unzip and copy opengl32.dll into Python dir)
 #
-#   T. Doyle
-#   March 18, 2022 (Updated 2020 example)
 
 
 import sys
@@ -111,3 +109,4 @@ if __name__ == "__main__":
 
     #Lets see what our point cloud data with lines looks like graphically       
     o3d.visualization.draw_geometries([line_set])
+
