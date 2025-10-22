@@ -1,4 +1,4 @@
-# 🛰️ 3D LIDAR Module — MSP432 + VL53L1X + Stepper Scanning & Point Clouds
+## 🛰️ 3D LIDAR Module — MSP432 + VL53L1X + Stepper Scanning & Point Clouds
 
 <!-- Front-load a compelling result -->
 <p align="center">
