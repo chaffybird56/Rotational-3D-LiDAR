@@ -1,8 +1,8 @@
-## 🛰️ 3D LIDAR Scanning — MSP432 + VL53L1X + Stepper Module & Point Clouds
+## 🛰️ Rotating LiDAR Scanner — 3D Point Cloud Generation with ToF Sensor, Microcontroller & Stepper Motor
 
 <!-- Front-load a compelling result -->
 <p align="center">
-  <img width="709" height="447" alt="SCR-20250929-lasl" src="https://github.com/user-attachments/assets/fbff079c-c1da-4971-be08-fb57a24acae5" />
+  <img width="550" height="347" alt="SCR-20250929-lasl" src="https://github.com/user-attachments/assets/fbff079c-c1da-4971-be08-fb57a24acae5" />
   <br/>
   <sub><b>Fig 1 — Hallway scan:</b> representative point cloud produced by the module.</sub>
 </p>
@@ -46,7 +46,7 @@ Think of it like a lighthouse beam sweeping around, but instead of light, it's m
 ## ⚡ System Architecture
 
 <p align="center">
-  <img width="788" height="713" alt="SCR-20250929-laml" src="https://github.com/user-attachments/assets/d7c073ae-2829-4019-b1a6-26166af98c5b" />
+  <img width="600" height="543" alt="SCR-20250929-laml" src="https://github.com/user-attachments/assets/d7c073ae-2829-4019-b1a6-26166af98c5b" />
   <br/>
   <sub><b>Fig 2 — Data flow:</b> initialization → step/measure → pack → UART → host visualization.</sub>
 </p>
@@ -83,7 +83,7 @@ The system follows a structured data acquisition pipeline:
 ### Microcontroller: MSP432E401Y
 
 <p align="center">
-  <img src="images/msp432e401y-clean.png" alt="MSP432E401Y LaunchPad" width="400"/>
+  <img src="images/msp432e401y-clean.png" alt="MSP432E401Y LaunchPad" width="300"/>
   <br/>
   <sub><b>MSP432E401Y</b> — ARM Cortex-M4F microcontroller with FPU</sub>
 </p>
@@ -125,7 +125,7 @@ The VL53L1X provides precise distance measurements using time-of-flight technolo
 ### Stepper Motor: 28BYJ-48
 
 <p align="center">
-  <img src="images/28byj48-stepper-clean.png" alt="28BYJ-48 Stepper Motor with ULN2003 Driver" width="300"/>
+  <img src="images/28byj48-stepper-clean.png" alt="28BYJ-48 Stepper Motor with ULN2003 Driver" width="250"/>
   <br/>
   <sub><b>28BYJ-48</b> — 5V unipolar stepper motor with gearbox and ULN2003 driver board</sub>
 </p>
@@ -153,7 +153,7 @@ The 28BYJ-48 provides precise rotational positioning for the scanning mechanism.
 
 <!-- Circuit schematic placeholder -->
 <p align="center">
-  <img width="1460" height="751" alt="SCR-20250929-kzld" src="https://github.com/user-attachments/assets/32dd998f-aa16-4a4d-9869-aa191e9aa436" />
+  <img width="800" height="411" alt="SCR-20250929-kzld" src="https://github.com/user-attachments/assets/32dd998f-aa16-4a4d-9869-aa191e9aa436" />
   <br/>
   <sub><b>Fig 3 — Circuit schematic:</b> MSP432 ↔ VL53L1X (I²C), MSP432 ↔ ULN2003 (GPIO), control buttons.</sub>
 </p>
@@ -285,7 +285,7 @@ At measurement index i within sweep k:
 $$
 \begin{align}
 \theta_i &= i \cdot \frac{\pi}{15} \quad \text{(radians)} \\
-r_{k,i} &= \text{VL53L1X\_GetDistance()} \quad \text{(millimeters)} \\
+r_{k,i} &= \texttt{VL53L1X\_GetDistance()} \quad \text{(millimeters)} \\
 x_k &= k \cdot 20 \\
 y_{k,i} &= r_{k,i} \cdot \sin(\theta_i) \\
 z_{k,i} &= r_{k,i} \cdot \cos(\theta_i)
@@ -455,7 +455,7 @@ Rotational-3D-LiDAR-main/
 
 <!-- Secondary result placeholder -->
 <p align="center">
- <img width="808" height="415" alt="SCR-20250929-layj" src="https://github.com/user-attachments/assets/08b90cc3-b911-4f81-8b2e-c16571253770" />
+ <img width="600" height="308" alt="SCR-20250929-layj" src="https://github.com/user-attachments/assets/08b90cc3-b911-4f81-8b2e-c16571253770" />
   <br/>
   <sub><b>Fig 4 — Secondary scan view:</b> additional rendering of the scanned environment.</sub>
 </p>
