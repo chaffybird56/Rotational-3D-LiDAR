@@ -285,14 +285,14 @@ At measurement index \(i\) within sweep \(k\):
 $$
 \begin{align}
 \theta_i &= i \cdot \frac{\pi}{15} \quad \text{(radians)} \\
-r_{k,i} &= \text{VL53L1X\_GetDistance()} \quad \text{(millimeters)} \\
+r_{k,i} &= d_{\text{sensor}} \quad \text{(millimeters)} \\
 x_k &= k \cdot 20 \\
 y_{k,i} &= r_{k,i} \cdot \sin(\theta_i) \\
 z_{k,i} &= r_{k,i} \cdot \cos(\theta_i)
 \end{align}
 $$
 
-Where `VL53L1X_GetDistance()` is the function call to retrieve distance measurements from the sensor.
+Where \(d_{\text{sensor}}\) is the distance measurement obtained from `VL53L1X_GetDistance()`.
 
 ### Coordinate System Convention
 
