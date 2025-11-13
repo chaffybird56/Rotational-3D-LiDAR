@@ -285,7 +285,7 @@ At measurement index i within sweep k:
 $$
 \begin{align}
 \theta_i &= i \cdot \frac{\pi}{15} \quad \text{(radians)} \\
-r_{k,i} &= \texttt{VL53L1X\_GetDistance()} \quad \text{(millimeters)} \\
+r_{k,i} &= \text{VL53L1X\_GetDistance()} \quad \text{(millimeters)} \\
 x_k &= k \cdot 20 \\
 y_{k,i} &= r_{k,i} \cdot \sin(\theta_i) \\
 z_{k,i} &= r_{k,i} \cdot \cos(\theta_i)
