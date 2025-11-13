@@ -1,0 +1,59 @@
+# Build artifacts
+*.o
+*.obj
+*.axf
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.crf
+*.d
+*.dep
+*.htm
+*.lnp
+*.build_log.htm
+
+# IDE files
+*.uvguix.*
+*.uvoptx
+*.uvprojx.bak
+*.sct
+*.scvd
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Data files
+*.xyz
+*.txt
+graph.*
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Keil specific
+*.plg
+*.tra
+*.iex
+*.htm
+*.sct
+
+# Backup files
+*.bak
+*.backup
+*~
+
